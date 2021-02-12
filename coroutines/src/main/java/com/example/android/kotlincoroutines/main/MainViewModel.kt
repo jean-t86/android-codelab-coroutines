@@ -124,7 +124,6 @@ class MainViewModel(private val repository: TitleRepository) : ViewModel() {
         viewModelScope.launch {
             try {
                 _spinner.value = true
-                delay(1000L)
                 repository.refreshTitle()
             } catch (error: TitleRefreshError) {
                 _snackBar.value = error.message
