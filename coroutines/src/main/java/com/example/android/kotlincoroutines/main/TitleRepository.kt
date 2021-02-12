@@ -43,6 +43,9 @@ class TitleRepository(val network: MainNetwork, val titleDao: TitleDao) {
 
 
     // TODO: Add coroutines-based `fun refreshTitle` here
+    suspend fun refreshTitle() {
+
+    }
 
     /**
      * Refresh the current title and save the results to the offline cache.
