@@ -61,6 +61,5 @@ class MainViewModelTest {
         Truth.assertThat(subject.taps.getValueForTest()).isEqualTo("0 taps")
         coroutineScope.advanceTimeBy(1000)
         Truth.assertThat(subject.taps.getValueForTest()).isEqualTo("1 taps")
-
     }
 }
